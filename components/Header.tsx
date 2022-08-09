@@ -4,16 +4,9 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className=" bg-slate-900 sticky top-0 z-50">
-      <div className="flex justify-between max-w-6xl  mx-5  xl:mx-auto">
+    <div className="w-full lg:px-6 bg-slate-900 z-50 px-2">
+      <div className="flex justify-between">
         {/* left */}
-        <div className="relative hidden lg:inline-grid w-24">
-          <Image
-            src="/images/tat-logo-white.png"
-            layout="fill"
-            objectFit="contain"
-          />
-        </div>
         <div className="relative w-20 lg:hidden flex-shrink-0 cursor-pointer">
           <Image
             src="/images/tat-logo-white.png"
@@ -23,8 +16,8 @@ const Header = () => {
         </div>
         {/* middle */}
         <div className="max-w-[180px] md:max-w-sm  md:w-[400px]">
-          <div className="mt-1 relative p-3 rounder-md">
-            <div className="absolute inset-y-0  pl-3 flex  items-center pointer-events-none">
+          <div className="mt-1 relative p-3 rounder-md w-full">
+            <div className="absolute inset-y-0  pl-3 flex  items-center w-full pointer-events-none">
               <SearchIcon className="h-5 w-5 text-gray-500" />
             </div>
             <input
